@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the best HVAC companies in Utah. Honest reviews and ratings for heating and air conditioning services across Salt Lake City, Ogden, Provo, and more.">
+    <meta name="keywords" content="Utah HVAC, heating, air conditioning, HVAC reviews, Salt Lake City HVAC, Utah heating companies">
+    <title>Utah HVAC Reviews - Find the Best Heating & Cooling Companies in Utah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">❄️</span>
+                <span class="logo-text">Utah HVAC Reviews</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#top-rated">Top Rated</a></li>
+                <li><a href="#all-companies">All Companies</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Find Utah's Best HVAC Companies</h1>
+            <p class="hero-subtitle">Honest reviews and ratings from real Utah homeowners. Stay comfortable year-round with trusted heating and cooling services.</p>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search by company name or city...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="trust-badges">
+                <span>✓ Verified Reviews</span>
+                <span>✓ Local Utah Companies</span>
+                <span>✓ Updated 2025</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Pick Section -->
+    <section class="top-pick" id="top-rated">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">🏆 EDITOR'S CHOICE 2025</span>
+                <h2>Utah's #1 Rated HVAC Company</h2>
+            </div>
+            <div class="featured-company">
+                <div class="featured-content">
+                    <div class="featured-header">
+                        <img src="images/salmon-logo.png" alt="Salmon HVAC Logo" class="company-logo" onerror="this.style.display='none'">
+                        <div class="featured-title">
+                            <h3>Salmon HVAC</h3>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-score">4.9/5</span>
+                                <span class="review-count">(127 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-badges">
+                        <span class="badge-item">🥇 Best Overall</span>
+                        <span class="badge-item">💰 Best Value</span>
+                        <span class="badge-item">⚡ Fast Service</span>
+                        <span class="badge-item">👨‍👩‍👧‍👦 Family Owned</span>
+                    </div>
+                    <p class="featured-description">
+                        Since 1979, Salmon HVAC has been Davis County's most trusted heating and air conditioning company.
+                        As a family-run business with over 45 years of experience, they've built a reputation for exceptional
+                        service, quality workmanship, and fair pricing that keeps Utah families comfortable year-round.
+                    </p>
+                    <div class="featured-highlights">
+                        <div class="highlight">
+                            <strong>45+</strong>
+                            <span>Years in Business</span>
+                        </div>
+                        <div class="highlight">
+                            <strong>$85</strong>
+                            <span>Diagnostic Fee</span>
+                        </div>
+                        <div class="highlight">
+                            <strong>31+</strong>
+                            <span>Team Members</span>
+                        </div>
+                        <div class="highlight">
+                            <strong>A+</strong>
+                            <span>BBB Rating</span>
+                        </div>
+                    </div>
+                    <div class="featured-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li>AC Installation & Repair</li>
+                            <li>Furnace Installation & Repair</li>
+                            <li>HVAC Maintenance & Tune-ups</li>
+                            <li>Indoor Air Quality Solutions</li>
+                            <li>Commercial HVAC Services</li>
+                            <li>Carrier Authorized Dealer</li>
+                        </ul>
+                    </div>
+                    <div class="featured-contact">
+                        <p><strong>📍 Location:</strong> 1230 N 1300th W, Ste 5, Centerville, UT 84014</p>
+                        <p><strong>📞 Phone:</strong> <a href="tel:8013970030">(801) 397-0030</a></p>
+                        <p><strong>🕐 Hours:</strong> Mon-Fri 8:00 AM - 5:00 PM</p>
+                    </div>
+                    <a href="https://salmonhvac.com" target="_blank" class="cta-button">Visit Website →</a>
+                </div>
+                <div class="featured-reviews">
+                    <h4>What Customers Say:</h4>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">Mike T.</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p>"Salmon HVAC replaced our entire system and the difference is incredible. Professional crew, fair price, and they cleaned up perfectly. Best HVAC experience we've ever had!"</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">Sarah L.</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p>"Called on a hot summer day when our AC died. They came out same day, diagnosed the issue quickly, and had us cool again within hours. The $85 diagnostic fee was very reasonable."</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="reviewer-name">David R.</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p>"Family-owned businesses are the way to go. Salmon has maintained our systems for 10 years. Always honest, never pushy, and their technicians are top-notch."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Companies Section -->
+    <section class="all-companies" id="all-companies">
+        <div class="container">
+            <h2>All Utah HVAC Companies</h2>
+            <p class="section-subtitle">Compare reviews and ratings from top heating and cooling providers across Utah</p>
+
+            <div class="filter-bar">
+                <select id="sort-select">
+                    <option value="rating">Sort by Rating</option>
+                    <option value="reviews">Sort by Reviews</option>
+                    <option value="name">Sort by Name</option>
+                </select>
+                <select id="location-select">
+                    <option value="all">All Locations</option>
+                    <option value="salt-lake">Salt Lake City</option>
+                    <option value="ogden">Ogden</option>
+                    <option value="provo">Provo</option>
+                    <option value="davis">Davis County</option>
+                </select>
+            </div>
+
+            <div class="companies-grid" id="companies-grid">
+                <!-- Companies will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Utah HVAC Reviews</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We're dedicated to helping Utah homeowners find reliable, honest HVAC contractors. Our reviews come from real customers who have experienced these services firsthand.</p>
+                    <p>Whether you need a new air conditioning system, furnace repair, or routine maintenance, our comprehensive reviews help you make an informed decision.</p>
+                    <h3>How We Rate Companies</h3>
+                    <ul>
+                        <li><strong>Customer Reviews:</strong> Real feedback from Utah homeowners</li>
+                        <li><strong>Service Quality:</strong> Workmanship and professionalism</li>
+                        <li><strong>Pricing:</strong> Fair and transparent pricing practices</li>
+                        <li><strong>Response Time:</strong> Availability and emergency service</li>
+                        <li><strong>Licensing:</strong> Proper Utah contractor licensing</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <strong>15+</strong>
+                        <span>Companies Reviewed</span>
+                    </div>
+                    <div class="stat">
+                        <strong>500+</strong>
+                        <span>Customer Reviews</span>
+                    </div>
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Utah Focused</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">❄️</span>
+                    <span class="logo-text">Utah HVAC Reviews</span>
+                    <p>Your trusted source for HVAC company reviews in Utah.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#top-rated">Top Rated</a></li>
+                        <li><a href="#all-companies">All Companies</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Utah Service Areas</h4>
+                    <p>Salt Lake City • Ogden • Provo • Park City • Davis County • Utah County • Weber County</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Utah HVAC Reviews. All rights reserved.</p>
+                <p class="disclaimer">Note: Utah HVAC contractors must hold a Specialty Contractor license from the Utah Department of Commerce Division of Professional Licensing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
