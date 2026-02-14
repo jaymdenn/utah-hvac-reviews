@@ -1,6 +1,6 @@
 // Supabase Configuration
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://uljsfurgvufuvagijlpp.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVsanNmdXJndnVmdXZhZ2lqbHBwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExMDAxOTAsImV4cCI6MjA4NjY3NjE5MH0.R-Z28P3iUdunE0nz1r9h1KqLuKXmbNju-W1_Jw8nnqE';
 
 // Company Data - Salmon HVAC featured prominently with detailed info
 const companies = [
