@@ -702,6 +702,101 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
 }
 
+/* Review Sources */
+.review-sources {
+    margin-bottom: var(--space-5);
+    padding: var(--space-4);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-lg);
+}
+
+.review-sources-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-3);
+}
+
+.review-sources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+}
+
+.review-source {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-light);
+    transition: all var(--transition-fast);
+}
+
+.review-source:hover {
+    border-color: var(--border);
+    box-shadow: var(--shadow-xs);
+}
+
+.source-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.source-text-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--text-tertiary);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.source-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.source-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.source-rating {
+    font-size: 0.6875rem;
+    color: var(--warning);
+    font-weight: 500;
+}
+
+.source-count {
+    color: var(--text-tertiary);
+    font-weight: 400;
+}
+
+/* Featured card review sources */
+.company-card.featured .review-sources {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 480px) {
+    .review-sources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .company-meta {
     display: flex;
     justify-content: space-between;
